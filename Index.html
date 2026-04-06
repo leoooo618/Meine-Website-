@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceNah | Lokales Verzeichnis Nordfriesland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .business-card { transition: all 0.3s ease; }
+        .business-card:hover { transform: translateY(-8px); shadow-lg; }
+        .star-rating { color: #fbbf24; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-blue-950 text-white py-12 px-4 text-center shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <h1 class="relative text-5xl font-black tracking-tight mb-2 italic">Service<span class="text-blue-400">Nah</span></h1>
+        <p class="relative text-lg text-blue-200 font-light max-w-xl mx-auto">Dein regionales Netzwerk für Handwerk, Tourismus & Service.</p>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 -mt-10 relative z-10">
+        <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div>
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1 ml-1">Region wählen</label>
+                <select class="w-full p-3 bg-slate-50 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-semibold">
+                    <option>Tönning</option>
+                    <option>Garding</option>
+                    <option>Sankt Peter-Ording</option>
+                    <option>Husum</option>
+                    <option>Friedrichstadt</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1 ml-1">Branche</label>
+                <select class="w-full p-3 bg-slate-50 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-semibold">
+                    <option>Alle Branchen</option>
+                    <option>🏠 Handwerk & Bau</option>
+                    <option>🏨 Hotels & Pensionen</option>
+                    <option>🚐 Wohnmobilstellplätze</option>
+                    <option>🎁 Souvenirs & Regionales</option>
+                    <option>🍴 Gastronomie</option>
+                    <option>⚓ Tourismus & Freizeit</option>
+                    <option>💡 Dienstleistungen</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1 ml-1">Direktsuche</label>
+                <div class="relative">
+                    <input type="text" placeholder="z.B. Elektriker..." class="w-full p-3 bg-slate-50 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none pr-10">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3 top-4 text-slate-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto p-6 mt-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="business-card bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
+                <div class="relative h-48 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500')] bg-cover bg-center">
+                    <div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-blue-900 shadow-sm">🏨 Hotel</div>
+                </div>
+                <div class="p-6 flex-grow">
+                    <div class="star-rating mb-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="text-slate-400 text-xs ml-1">(4.5)</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Eider-Residenz</h3>
+                    <p class="text-slate-500 text-sm mt-2 line-clamp-2">Exklusive Übernachtungen direkt am Deich mit Blick auf das Eidersperrwerk.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-600 text-[10px] px-2 py-1 rounded uppercase font-bold tracking-wider">Parkplatz</span>
+                        <span class="bg-slate-100 text-slate-600 text-[10px] px-2 py-1 rounded uppercase font-bold tracking-wider">WLAN</span>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 mt-auto border-t border-slate-50 flex gap-2">
+                    <a href="#" class="flex-1 bg-blue-600 text-white text-center py-3 rounded-xl font-bold text-sm hover:bg-blue-700 shadow-md">Details</a>
+                </div>
+            </div>
+
+            <div class="business-card bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
+                <div class="relative h-48 bg-green-100 flex items-center justify-center italic text-green-700">
+                    <i class="fa-solid fa-caravan text-6xl opacity-20 absolute"></i>
+                    <span class="z-10 font-bold">Stellplatz Deichglück</span>
+                </div>
+                <div class="p-6 flex-grow">
+                    <div class="star-rating mb-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span class="text-slate-400 text-xs ml-1">(4.0)</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800">Womo-Stellplatz Nord</h3>
+                    <p class="text-slate-500 text-sm mt-2">Ruhiger Platz für 20 Mobile. Inkl. Strom und Wasserstation.</p>
+                </div>
+                <div class="p-6 pt-0 mt-auto border-t border-slate-50 flex gap-2">
+                    <a href="#" class="flex-1 bg-slate-900 text-white text-center py-3 rounded-xl font-bold text-sm">Buchen</a>
+                </div>
+            </div>
+
+            <div class="business-card bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
+                <div class="h-48 bg-blue-50 flex items-center justify-center">
+                    <i class="fa-solid fa-gift text-6xl text-blue-200"></i>
+                </div>
+                <div class="p-6 flex-grow">
+                    <div class="star-rating mb-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="text-slate-400 text-xs ml-1">(5.0)</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800">Bernstein-Laden</h3>
+                    <p class="text-slate-500 text-sm mt-2">Echter nordfriesischer Bernstein und handgefertigte Souvenirs.</p>
+                </div>
+                <div class="p-6 pt-0 mt-auto border-t border-slate-50 flex gap-2">
+                    <a href="#" class="flex-1 bg-green-500 text-white text-center py-3 rounded-xl font-bold text-sm"><i class="fa-brands fa-whatsapp mr-2"></i>Anfrage</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 bg-gradient-to-r from-blue-900 to-blue-800 p-10 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold italic mb-4 text-center">Expandiere mit uns!</h2>
+                <p class="text-blue-100 text-center max-w-2xl mx-auto mb-8">Wir bringen ServiceNah in jede Stadt im Norden. Möchtest du deine Region vertreten oder deinen Betrieb eintragen?</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-white text-blue-900 px-8 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-50 transition shadow-lg">Partner werden</button>
+                    <button class="bg-blue-700/50 border border-blue-400 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition">Stadt vorschlagen</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-20 py-12 bg-white border-t text-center text-slate-400 text-sm">
+        <div class="flex justify-center gap-6 mb-4 text-slate-500 text-lg">
+            <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>&copy; 2026 ServiceNah - Das Netzwerk für den Norden.</p>
+        <p class="mt-2 text-[10px] uppercase tracking-tighter">Handmade for Tönning & Umgebung</p>
+    </footer>
+
+</body>
+</html>
